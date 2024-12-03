@@ -9,7 +9,7 @@
 
 [FastAPI do Zero - Dunossauro](https://fastapidozero.dunossauro.com/)
 
-- Utilização:
+- Comandos:
 
 ```
 [tool.taskipy.tasks]
