@@ -24,7 +24,7 @@ class BookDB(BookSchema):
 
 
 class BookList(BaseModel):
-    users: list[BookSchema]
+    books: list[BookSchema]
 
 
 # Schema:
