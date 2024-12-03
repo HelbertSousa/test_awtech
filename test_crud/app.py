@@ -2,7 +2,7 @@ from http import HTTPStatus
 
 from fastapi import FastAPI, HTTPException
 
-from test_crud.schemas import BookDB, BookSchema, Message
+from test_crud.schemas import BookDB, BookList, BookSchema, Message
 
 app = FastAPI()
 
@@ -18,7 +18,7 @@ def create_book(books: BookSchema):
     return book_with_id
 
 
-@app.get("/books/", response_model=BookSchema)
+@app.get("/books/", response_model=BookList)
 def read_books():
     return {"books": database}
 
